@@ -97,3 +97,13 @@ class IncrementBloc implements BlocBase {
   }
 }
 ```
+Như ví dụ trên ta có thể thấy được phần Business Logic được tách biệt thành `IncrementBloc` class riêng với `CounterPage` UI class. Việc này giúp cho test logic dễ dàng hơn và ta cũng có thể sử dụng lại logic ở bất cứ đâu khi chỉ cần đăng ký sử dụng và lắng nghe stream qua `bloc.incrementCounter` và `.outCounter`.
+
+Dù giúp ta triển khai một kiến trúc phân tách khá rõ ràng nhưng ta có thể thấy  implement một bloc khá là khiến ta bối rối nếu như không quen với reactive programming. May mắn thay ta có thể sử dụng một thư viện hỗ trợ [*] khác được xây dựng dựa trên Bloc core.
+(mình thấy kiến trúc khá giống với Redux Saga bên react native)
+
+# Tham khảo
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+[*] Thư viện giúp triển khai BLoc : https://felangel.github.io/bloc/#/coreconcepts
+
