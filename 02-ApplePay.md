@@ -130,7 +130,9 @@ implement delegate xử lý thanh toán
 
 1. `paymentAuthorizationViewControllerDidFinish`: được gọi khi hoàn thành thanh toán.
 2. `paymentAuthorizationViewController`: xử lý xác thực người dùng thanh toán. Xác thực thành công thì phải gọi `completion(.init(status: .success, errors: nil))` để hoàn thành thanh toán.
+Giao diện thanh toán như sau
 
+![alt text](http://prntscr.com/o2q5a0)
 
 
 
@@ -138,3 +140,4 @@ implement delegate xử lý thanh toán
 1. https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay_requirements?language=objc
 2. https://developer.apple.com/apple-pay/sandbox-testing/
 
+3. https://www.raywenderlich.com/2113-apple-pay-tutorial-getting-started
